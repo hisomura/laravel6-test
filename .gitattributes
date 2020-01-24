@@ -1,5 +1,15 @@
-* text=auto
+* text=auto eol=lf
 *.css linguist-vendored
 *.scss linguist-vendored
 *.js linguist-vendored
 CHANGELOG.md export-ignore
+
+*.jpg -text
+*.png -text
+*.gif -text
+*.ico -text
+*.otf -text
+*.eot -text
+*.ttf -text
+*.woff -text
+*.woff2 -text
