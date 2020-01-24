@@ -36,7 +36,7 @@ services:
       - db
     command: /bin/bash -c "
       composer install &&
-      /wait-for-it/wait-for-it.sh db:3306 -- php /var/www/project/artisan migrate:fresh --seed &&
+      /wait-for-it/wait-for-it.sh db:3306 -- php /var/www/project/artisan migrate &&
       apache2-foreground
       "
     ports:
